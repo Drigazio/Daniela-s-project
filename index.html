@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <!-- This is a comment -->
+    <img id="cool" src="https://placekitten.com/400/500" alt="A small kitten" />
+    <div class="card-content">
+    <header>
+      <h1>Cats are so cute</h1>
+    </header>
+      <div> Hey whats up. ~ Hello World!</div>
+      <p>3 main technologies in the browser:</p>
+      <ul>
+        <li>HTML | "Markup" <span class="bold-underlined">Structure</span> of the page</li>
+        <li>CSS | Styles</li>
+        <li>JavaScript (not Java, not "Javascript") | Functionality</li>
+      </ul>
+    </div>
+  </div>
+
+  <style>
+    /* This is a css comment */
+    body {
+      font-family: sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      min-height: 0;
+    }
+
+    .bold-underlined {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .card-content {
+      padding: 4px;
+    }
+
+    .card {
+      display: flex;
+      border: 1px solid #e3e3e3;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 800px) {
+      .card {
+        display: block;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    let variable = 'Great, a variable'
+    let people = ['zack', 'bob', 'mike']
+    
+    let person = {
+      firstName: 'zack',
+      lastName: 'smith',
+      height: 100,
+      yell: function yell(string1) {
+        console.log(string1 + ' but i might stop later')
+      }
+    }
+
+
+    person.yell('nope. im done.')
+
+
+    function logPerson(person) {
+      console.log(person)    
+    }    
+    
+    function addTen(num){
+      if(typeof num !== 'number') {
+        throw new Error('Needs to be a number.')
+      }
+      
+      return num + 10
+    }
+  </script>
+</body>
+
